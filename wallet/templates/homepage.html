@@ -1,0 +1,23 @@
+{% load static %}
+
+<html>
+<head>
+	<title>Welcome Page</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'wallet/homepage.css' %}">
+</head>
+<body>
+	<h1>Welcome to Wallet API</h1>
+	<h2>Create a new wallet:</h2>
+	<form method="POST" action="{% url 'wallet-create' %}">
+    {% csrf_token %}
+    <input type="hidden" name="currency" value="ETH">
+    <button type="submit">Create Wallet</button>
+  </form>
+	<br>
+	<h2>List of all wallets:</h2>
+	<form method="GET" action="{% url 'wallet-list' %}">
+		{% csrf_token %}
+		<button type="submit">Get wallet list</button>
+	</form>
+</body>
+</html>

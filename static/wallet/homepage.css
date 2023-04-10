@@ -1,0 +1,67 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f1f1f1;
+  }
+  
+  /* Header styles */
+  h1 {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  /* Button styles */
+  button {
+    background-color: #4285f4;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #357ae8;
+  }
+  
+  /* Form styles */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Media queries */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 36px;
+    }
+    
+    h2 {
+      font-size: 20px;
+    }
+    
+    button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+  
