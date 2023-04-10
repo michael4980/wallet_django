@@ -16,7 +16,7 @@ This is a simple api site built using Django.
 
 ## Getting Started
 1. Clone the repository to your PC
-2. Run in wordir following command
+2. Run in workdir following command
 ```
 docker-compose up --build -d
 ```
